@@ -414,6 +414,9 @@ def format(k, v):
 		else:
 			v = WENUMS[k][v]
 	
+	if type(v) == unicode:
+		v = v.encode('utf-8')
+	
 	v = TYPES[type(v)][0](v)
 	return '%i=%s' % (WTAGS[k][0], v)
 
