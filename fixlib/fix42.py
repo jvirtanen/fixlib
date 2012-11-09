@@ -13,8 +13,13 @@ PROTO = 'FIX.4.2'
 CSMASK = 255
 
 ADMIN = set([
-	'Logon', 'Logout', 'ResendRequest', 'Heartbeat', 'TestRequest',
-	'SequenceReset', 'Reject',
+	'Heartbeat',
+	'TestRequest',
+	'ResendRequest',
+	'Reject',
+	'SequenceReset',
+	'Logout',
+	'Logon',
 ])
 
 IGNORE = ADMIN - set(['Reject'])
