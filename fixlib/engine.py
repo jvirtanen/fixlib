@@ -82,7 +82,7 @@ class Engine(asyncore.dispatcher):
 			
 			if fill is not None:
 				self.queue({
-					'MsgType': 'Sequence Reset',
+					'MsgType': 'SequenceReset',
 					'MsgSeqNum': cur,
 					'GapFillFlag': True,
 					'NewSeqNo': fill + 1,
@@ -95,7 +95,7 @@ class Engine(asyncore.dispatcher):
 		
 		if fill is not None:
 			self.queue({
-				'MsgType': 'Sequence Reset',
+				'MsgType': 'SequenceReset',
 				'MsgSeqNum': cur,
 				'GapFillFlag': True,
 				'NewSeqNo': fill + 1,

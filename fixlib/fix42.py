@@ -14,7 +14,7 @@ CSMASK = 255
 
 ADMIN = set([
 	'Logon', 'Logout', 'ResendRequest', 'Heartbeat', 'TestRequest',
-	'Sequence Reset', 'Reject',
+	'SequenceReset', 'Reject',
 ])
 
 IGNORE = ADMIN - set(['Reject'])
@@ -28,7 +28,7 @@ WENUMS = {
 		'TestRequest': '1',
 		'ResendRequest': '2',
 		'Reject': '3',
-		'Sequence Reset': '4',
+		'SequenceReset': '4',
 		'Logout': '5',
 		'ExecutionReport': '8',
 		'OrderCancelReject': '9',
