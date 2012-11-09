@@ -178,12 +178,12 @@ WENUMS = {
 	},
 	'TimeInForce': {
 		'Day': '0',
-		'GTC': '1',
-		'OPG': '2',
-		'IOC': '3',
-		'FOK': '4',
-		'GTX': '5',
-		'GTD': '6',
+		'GoodTillCancel': '1',
+		'AtTheOpening': '2',
+		'ImmediateOrCancel': '3',
+		'FillOrKill': '4',
+		'GoodTillCrossing': '5',
+		'GoodTillDate': '6',
 	},
 	'TargetStrategy': {
 		'Calendar Spread': '1000',
