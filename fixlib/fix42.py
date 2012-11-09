@@ -45,7 +45,7 @@ WENUMS = {
 		'MarketDataRequestReject': 'Y',
 		'MarketDataSnapshot': 'W',
 		'MultiLeg': 'AB',
-		'Multi-Leg Replace': 'AC',
+		'MultiLegReplace': 'AC',
 		'QuoteRequestReject': 'AG',
 	},
 	'Side': {
