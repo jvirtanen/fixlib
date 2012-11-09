@@ -186,7 +186,7 @@ WENUMS = {
 		'GoodTillDate': '6',
 	},
 	'TargetStrategy': {
-		'Calendar Spread': '1000',
+		'CalendarSpread': '1000',
 	},
 	'OrdRejReason': {
 		'Broker option': 0,
