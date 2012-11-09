@@ -130,10 +130,10 @@ WENUMS = {
 		'Unsubscribe': 2,
 	},
 	'CxlRejReason': {
-		'Too late to cancel': 0,
-		'Unknown order': 1,
-		'Broker Option': 2,
-		'Order already pending': 3,
+		'TooLateToCancel': 0,
+		'UnknownOrder': 1,
+		'BrokerOption': 2,
+		'PendingCancelOrReplace': 3,
 	},
 	'CxlRejResponseTo': {
 		'Order Cancel Request': '1',
