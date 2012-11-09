@@ -160,13 +160,13 @@ WENUMS = {
 	'MiscFeeType': {
 		'Regulatory': '1',
 		'Tax': '2',
-		'Local Commission': '3',
-		'Exchange Fees': '4',
+		'LocalCommission': '3',
+		'ExchangeFees': '4',
 		'Stamp': '5',
 		'Levy': '6',
 		'Other': '7',
 		'Markup': '8',
-		'Consumption Tax': '9',
+		'ConsumptionTax': '9',
 	},
 	'ExecRestatementReason': {
 		'GT Corporate action': 0,
