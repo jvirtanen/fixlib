@@ -110,7 +110,7 @@ class Engine(asyncore.dispatcher):
 			rsp['EndSeqNo'] = msg['MsgSeqNum'] - 1
 			self.queue(rsp)
 		self.store.save('in', msg)
-		if msg['MsgType'] == 'Test Request':
+		if msg['MsgType'] == 'TestRequest':
 			rsp = {'MsgType': 'Heartbeat', 'TestReqID': msg['TestReqID']}
 			self.queue(rsp)
 		elif msg['MsgType'] == 'Heartbeat':
