@@ -105,7 +105,7 @@ class Engine(asyncore.dispatcher):
 		type = 'admin' if msg['MsgType'] in fix42.ADMIN else 'app'
 		self.hook(type, msg)
 		if msg['MsgSeqNum'] > self.store.last[0] + 1:
-			rsp = {'MsgType': 'Resend Request', 'EndSeqNo': 0}
+			rsp = {'MsgType': 'ResendRequest', 'EndSeqNo': 0}
 			rsp['BeginSeqNo'] = self.store.last[0] + 1
 			rsp['EndSeqNo'] = msg['MsgSeqNum'] - 1
 			self.queue(rsp)
@@ -115,7 +115,7 @@ class Engine(asyncore.dispatcher):
 			self.queue(rsp)
 		elif msg['MsgType'] == 'Heartbeat':
 			self.queue({'MsgType': 'Heartbeat'})
-		elif msg['MsgType'] == 'Resend Request':
+		elif msg['MsgType'] == 'ResendRequest':
 			self.resend(msg)
 
 class Initiator(Engine):

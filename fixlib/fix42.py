@@ -13,7 +13,7 @@ PROTO = 'FIX.4.2'
 CSMASK = 255
 
 ADMIN = set([
-	'Logon', 'Logout', 'Resend Request', 'Heartbeat', 'TestRequest',
+	'Logon', 'Logout', 'ResendRequest', 'Heartbeat', 'TestRequest',
 	'Sequence Reset', 'Reject',
 ])
 
@@ -26,7 +26,7 @@ WENUMS = {
 	'MsgType': {
 		'Heartbeat': '0',
 		'TestRequest': '1',
-		'Resend Request': '2',
+		'ResendRequest': '2',
 		'Reject': '3',
 		'Sequence Reset': '4',
 		'Logout': '5',
