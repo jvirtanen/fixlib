@@ -140,9 +140,9 @@ WENUMS = {
 		'OrderCancelReplaceRequest': '2',
 	},
 	'HandlInst': {
-		'auto-private': '1',
-		'auto-public': '2',
-		'manual': '3',
+		'AutomaticPrivate': '1',
+		'AutomaticPublic': '2',
+		'Manual': '3',
 	},
 	'MultiLegReportingType': {
 		'Single Security': '1',
