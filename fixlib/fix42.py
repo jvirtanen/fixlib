@@ -169,12 +169,12 @@ WENUMS = {
 		'ConsumptionTax': '9',
 	},
 	'ExecRestatementReason': {
-		'GT Corporate action': 0,
-		'GT renewal / restatement': 1,
-		'Verbal change': 2,
-		'Repricing of order': 3,
-		'Broker option': 4,
-		'Partial decline of OrderQty': 5,
+		'GTCorporateAction': 0,
+		'GTRenewalOrRestatement': 1,
+		'VerbalChange': 2,
+		'RepricingOfOrder': 3,
+		'BrokerOption': 4,
+		'PartialDeclineOfOrderQty': 5,
 	},
 	'TimeInForce': {
 		'Day': '0',
