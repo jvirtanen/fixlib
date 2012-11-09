@@ -145,9 +145,9 @@ WENUMS = {
 		'Manual': '3',
 	},
 	'MultiLegReportingType': {
-		'Single Security': '1',
-		'Individual leg': '2',
-		'Multi-leg': '3',
+		'Single': '1',
+		'IndividualLeg': '2',
+		'MultiLeg': '3',
 	},
 	'ExecInst': {
 		'Not held': '1',
