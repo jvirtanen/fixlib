@@ -40,7 +40,7 @@ class BasicTests(unittest.TestCase):
 	def testtypes(self):
 		msg = {
 			'MsgType': 'Logon',
-			'ExecInst': ['Not held', 'Work', 'Go along'],
+			'ExecInst': ['NotHeld', 'Work', 'GoAlong'],
 			'PossDupFlag': True,
 			'BeginSeqNo': 3,
 			'CumQty': 15.3,

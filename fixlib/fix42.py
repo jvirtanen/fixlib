@@ -150,12 +150,12 @@ WENUMS = {
 		'MultiLeg': '3',
 	},
 	'ExecInst': {
-		'Not held': '1',
+		'NotHeld': '1',
 		'Work': '2',
-		'Go along': '3',
-		'Over the day': '4',
+		'GoAlong': '3',
+		'OverTheDay': '4',
 		'Held': '5',
-		"Participate don't initiate": '6',
+		"ParticipateDontInitiate": '6',
 	},
 	'MiscFeeType': {
 		'Regulatory': '1',
