@@ -136,8 +136,8 @@ WENUMS = {
 		'PendingCancelOrReplace': 3,
 	},
 	'CxlRejResponseTo': {
-		'Order Cancel Request': '1',
-		'Order Cancel/Replace Request': '2',
+		'OrderCancelRequest': '1',
+		'OrderCancelReplaceRequest': '2',
 	},
 	'HandlInst': {
 		'auto-private': '1',
