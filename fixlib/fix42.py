@@ -43,7 +43,7 @@ WENUMS = {
 		'OrderCancelReplaceRequest': 'G',
 		'OrderStatusRequest': 'H',
 		'BusinessMessageReject': 'j',
-		'DKTrade': 'Q',
+		'DontKnowTrade': 'Q',
 		'QuoteRequest': 'R',
 		'Quote': 'S',
 		'MarketDataRequest': 'V',
