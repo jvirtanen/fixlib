@@ -11,8 +11,8 @@ import asyncore
 
 class Engine(asyncore.dispatcher):
 	
-	def __init__(self, sock):
-		asyncore.dispatcher.__init__(self, sock)
+	def __init__(self, sock, map=None):
+		asyncore.dispatcher.__init__(self, sock, map)
 		self.closed = False
 		self.hooks = {}
 	
@@ -120,8 +120,8 @@ class Engine(asyncore.dispatcher):
 
 class Initiator(Engine):
 	
-	def __init__(self, sock, store, parties):
-		Engine.__init__(self, sock)
+	def __init__(self, sock, store, parties, map=None):
+		Engine.__init__(self, sock, map)
 		self.store = store
 		self.buffer = []
 		self.parties = parties
@@ -136,8 +136,8 @@ class Initiator(Engine):
 
 class AcceptorServer(asyncore.dispatcher):
 	
-	def __init__(self, sock, store):
-		asyncore.dispatcher.__init__(self, sock)
+	def __init__(self, sock, store, map=None):
+		asyncore.dispatcher.__init__(self, sock, map)
 		self.store = store
 		self.hooks = {}
 	
@@ -146,13 +146,13 @@ class AcceptorServer(asyncore.dispatcher):
 	
 	def handle_accept(self):
 		client = self.accept()
-		a = Acceptor(client[0], self.store)
+		a = Acceptor(client[0], self.store, self._map)
 		a.hooks = self.hooks
 
 class Acceptor(Engine):
 	
-	def __init__(self, sock, store):
-		Engine.__init__(self, sock)
+	def __init__(self, sock, store, map=None):
+		Engine.__init__(self, sock, map)
 		self.store = store
 		self.buffer = []
 		self.parties = None
