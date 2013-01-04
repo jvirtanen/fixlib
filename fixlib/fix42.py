@@ -238,6 +238,7 @@ RTAGS = {
 	43: ('PossDupFlag', bool),
 	44: ('Price', float),
 	45: ('RefSeqNo', int),
+	48: ('SecurityID', str),
 	49: ('SenderCompID', str),
 	50: ('SenderSubID', str),
 	52: ('SendingTime', datetime),
