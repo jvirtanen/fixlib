@@ -481,10 +481,11 @@ def parse(msg):
 	for tag in tags:
 		
 		k, v = tag.split('=', 1)
-		if int(k) not in RTAGS:
-			raise ValueError(int(k))
-		
-		k, type = RTAGS[int(k)]
+		if int(k) in RTAGS:
+			k, type = RTAGS[int(k)]
+		else:
+			type = str
+
 		v = TYPES[type][1](v)
 		if k.startswith('No') and k[2:] in REPEAT and v:
 			grp = k[2:]
