@@ -426,7 +426,9 @@ def format(k, v):
 		v = v.encode('utf-8')
 	
 	v = TYPES[type(v)][0](v)
-	return '%i=%s' % (WTAGS[k][0], v)
+
+	wtag = WTAGS.get(k)
+	return '%i=%s' % (wtag[0], v) if wtag else '%s=%s' % (k, v)
 
 def tags(body, k, v):
 	
